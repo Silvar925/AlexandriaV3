@@ -48,3 +48,34 @@
     width: 200px;
     padding: 5px;
 }
+
+.statistic_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.statistic_card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.statistic_card ul li a {
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
+}
+
+.statistic_card ul li a img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.statistic_card ul li a:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+}
