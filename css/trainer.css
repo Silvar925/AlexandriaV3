@@ -21,9 +21,30 @@
     color: black;
 }
 
+.trainer_section nav ul li a:hover {
+    font-weight: 600;
+    color: #06879AFF;
+}
+
 .trainer_section_container {
-    background-color: white;
+    /* background-color: white; */
     border-radius: 10px;
     width: 1000px;
     height: 800px;
+}
+
+.trainer_section_container_title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trainer_section_container_title_filterBox {
+    display: flex;
+    gap: 10px;
+}
+
+.trainer_section_container_title_filterBox select {
+    width: 200px;
+    padding: 5px;
 }
