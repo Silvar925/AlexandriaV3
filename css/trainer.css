@@ -1,6 +1,6 @@
 .trainer_section {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
     margin-top: 30px;
 }
@@ -27,10 +27,14 @@
 }
 
 .trainer_section_container {
-    /* background-color: white; */
+    display: flex;
+    flex-direction: column;    
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
     border-radius: 10px;
     width: 1000px;
-    height: 800px;
+    height: 790px;
 }
 
 .trainer_section_container_title {
@@ -47,35 +51,21 @@
 .trainer_section_container_title_filterBox select {
     width: 200px;
     padding: 5px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.statistic_card {
+.trainer_section_statistic {
     display: flex;
+    gap: 20px;
     flex-direction: column;
 }
 
-.statistic_card ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 200px;
-    margin-top: 10px;
+table {
+    border-collapse: collapse;
 }
 
-.statistic_card ul li a {
-    display: flex;
-    padding: 5px;
-    gap: 10px;
-    align-items: center;
-}
-
-.statistic_card ul li a img {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-}
-
-.statistic_card ul li a:hover {
-    background-color: lightgray;
-    border-radius: 10px;
+td {
+    border: 1px solid #ccc;
+    padding: 8px; 
+    width: auto;
 }

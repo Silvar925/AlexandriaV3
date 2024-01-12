@@ -1,0 +1,157 @@
+.forum_section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.forum_section nav {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.forum_section nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.forum_section_container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 1000px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.forum_section_container_list ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.forum_section_container_list ul li {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+.li_left {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.li_right {
+    text-align: center;
+    color: #a5acb3;
+}
+
+.li_right p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.forum_card_title {
+    display: flex;
+    gap: 10px;
+}
+
+.forum_card_additional_info {
+    display: flex;
+    gap: 10px;
+}
+
+.forum_card_additional_info p {
+    color: #a5acb3;
+}
+
+.forum_section_container_title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.forum_card_title_difficulty {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.forum_card_title_difficulty svg {
+    height: 20px;
+    width: 20px;
+}
+
+.forum_card_title_difficulty img {
+    height: 20px;
+    width: 20px;
+}
+
+.forum_section_container_title_filter {
+    display: flex;
+    gap: 10px;
+}
+
+.forum_card_name a {
+    font-size: 18px;
+}
+
+.forum_card_name a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.forum_card_name a:active {
+    color: #06879AFF;
+    text-decoration: none;
+}
+
+.forum_card_title a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.forum_card_title a:active {
+    color: #06879AFF;
+    text-decoration: none;
+}
+
+
+.most_interesting_24h {
+    display: flex;
+    width: 280px;
+    padding: 20px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.most_interesting_24h ul li {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 20px 0px;
+    border-bottom: 1px solid #a5acb3;
+}
+
+.most_interesting_24h_title p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.most_interesting_24h_additional_info {
+    display: flex;
+    gap: 10px;
+}
+
+.most_interesting_24h_additional_info p {
+    color: #a5acb3;
+    font-family: 'Montserrat', sans-serif;
+}

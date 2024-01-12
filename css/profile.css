@@ -1,0 +1,225 @@
+.profile_section {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.profile_section nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #06879AFF;;
+    border-radius: 10px;
+}
+
+.profile_section nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile_section nav ul li a {
+    color: white;
+}
+
+.profile_section nav ul li a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.profile_section nav ul li a:active {
+    text-decoration: none;
+}
+
+.profile {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile h1 {
+    color: white;
+}
+
+.profile img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profile_section_container_friends {
+    display: flex;
+    gap: 20px;
+}
+
+.profile_section_container_friends_left {
+    display: flex;
+    gap: 10px;
+    width: 550px;
+    padding: 20px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.profile_section_container_friends_left_title {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.profile_section_container_friends_left_title_up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile_section_container_friends_left ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.profile_section_container_friends_left ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a5acb3;
+}
+
+.profile_section_container_friends_left ul li img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.friend_info {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.friend_info p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.friendName {
+    color: #06879AFF;
+    font-weight: 600;
+}
+
+.sendMessage {
+    color: #06879AFF;
+    font-size: 14px;
+}
+
+.profile_section_container_friends_right {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_section_container_messenger {
+    display: flex;
+    padding: 20px;
+    width: 856px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.profile_section_container_messenger hr {
+    margin: 0 20px;
+}
+
+.profile_section_container_messenger_left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile_section_container_messenger_left ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile_section_container_messenger_left ul li a {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.profile_section_container_messenger_left ul li a:hover {
+    background-color: #a5acb3;
+    border-radius: 10px;
+}
+
+.profile_section_container_messenger_left ul li a img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.last_message {
+    display: flex;
+    flex-direction: column;
+}
+
+.last_message p span:first-child{
+    font-size: 14px;
+    color: #06879AFF;
+}
+
+.last_message p span:last-child {
+    font-size: 14px;
+}
+
+.profile_section_container_messenger_right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 550px;
+}
+
+.profile_section_container_messenger_right_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile_section_container_messenger_right_title_left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.profile_section_container_messenger_right_title_left img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile_section_container_messenger_right_title_left_info {
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+}
+
+
+.profile_section_container_messenger_right_title_right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile_section_container_messenger_right_title_right a img {
+    height: 30px;
+    width: 30px;
+}
+
+.messenger_box {
+    display: flex;
+    flex-direction: column;
+}
