@@ -1,0 +1,64 @@
+.rating_section {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.rating_section_container {
+    display: flex;
+    /* width: 550px; */
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+table thead {
+    background-color: #EEF0F4;
+}
+
+table thead th {
+    padding: 22px 38px;
+    color: #42577C;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+table thead th {
+    padding: 22px 38px;
+    color: #42577C;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+table tbody tr td {
+    text-align: center;
+    padding: 10px;
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    border-bottom: 1px solid #42577C;
+}
+
+
+table tbody tr td a {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+table tbody tr td a img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}

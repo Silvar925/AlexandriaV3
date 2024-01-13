@@ -1,7 +1,7 @@
 .profile_section {
     margin-top: 30px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
 }
 
@@ -123,19 +123,22 @@
 
 .profile_section_container_messenger {
     display: flex;
-    padding: 20px;
-    width: 856px;
+    padding: 20px 10px;
+    min-height: 1000px;
+    width: 1000px;
     background-color: white;
     border-radius: 10px;
 }
 
 .profile_section_container_messenger hr {
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .profile_section_container_messenger_left {
     display: flex;
+    max-width: 300px;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
@@ -179,9 +182,9 @@
 
 .profile_section_container_messenger_right {
     display: flex;
+    width: 700px;
     flex-direction: column;
     gap: 10px;
-    width: 550px;
 }
 
 .profile_section_container_messenger_right_title {
@@ -220,6 +223,69 @@
 }
 
 .messenger_box {
+    border-radius: 10px;
+    padding: 20px;
+    background-image: url('/images/background_messenger.png');
+    height: 100%
+}
+
+.messenger_box ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.messenger_box ul li {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    max-width: 430px;
+    border-radius: 10px;
+}
+
+.get_message {
+    background-color: white;
+}
+
+.messenger_box ul li h4 {
+    margin-bottom: 3px;
+}
+
+.info_messenge {
+    display: flex;
+    flex-direction: column;
+}
+
+.info_messenge p {
+    font-size: 12px;
+}
+
+.post_message {
+    align-self: flex-end;
+    background-color: #EFFDDE;
+}
+
+.info_messenge {
+    align-items: flex-end;
+}
+
+.send_box {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    gap: 5px;
+}
+
+.send_box_buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.send_box input {
+    width: 100%;
+}
+
+.btnSendMessage {
+    background-color: #06879AFF;
+    color: white; 
 }
