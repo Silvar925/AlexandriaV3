@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" href="{% static 'UserProfile/css/authorization.css' %}" rel="stylesheet"/>
+
+    <title>Авторизация</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form method="post" action="{% url 'registration' %}" class="registration-form" id="formReg">
+                <h1>Регистрация</h1>
+            
+                {% csrf_token %}
+            
+                <input type="text" name="name" id="id_name" placeholder="Имя">
+                <input type="text" name="surname" id="id_surname" placeholder="Фамилия">
+                <input type="text" name="fathername" id="id_fathername" placeholder="Отчество">
+                <input type="date" name="birth_date" id="id_birth_date" placeholder="Дата рождения">
+                <input type="email" name="email" id="id_email" placeholder="E-mail">
+                <input type="text" name="username" id="id_username" placeholder="Username">
+                <input type="password" name="password" id="id_password" placeholder="Password">
+            
+                <button id="btnReg" class="btnAuth" type="submit">Зарегистрироваться</button>
+            </form>
+            
+
+        </div>
+
+        <div class="form-container sign-in">
+
+            <form method="post" action="{% url 'authentication' %}" class="authorization-form" id="formAuth">
+
+                <div class="authorization-form_title">
+                    <h1>Александрия</h1>
+                    <p>Авторизуйтесь или создайте ID</p>
+                </div>
+
+
+                
+                {% csrf_token %}
+                <input name="login" type="text" placeholder="Логин">
+                <input name="password" type="password" placeholder="Пароль">
+                <a href="#">Забыли пароль</a>
+
+                <button type="submit" class="btnAuth" value="Отправить">Войти</button>
+            </form>
+
+
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Авторизация</h1>
+                    <p>Введите свои персональные данные, чтобы использовать все возможности сайта</p>
+                    <button class="hidden" id="login">Отмена</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Регистрация</h1>
+                    <p>Зарегистрируйтесь, указав свои персональные данные, чтобы использовать все возможности сайта</p>
+                    <button class="hidden" id="register">Начать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('container');
+        const registerBtn = document.getElementById('register');
+        const loginBtn = document.getElementById('login');
+
+        registerBtn.addEventListener('click', () => {
+            container.classList.add("active");
+        });
+
+        loginBtn.addEventListener('click', () => {
+            container.classList.remove("active");
+        });
+    </script>
+</body>
+
+</html>

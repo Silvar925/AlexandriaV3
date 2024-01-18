@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/profile.css">
 
-    <title>Мой профиль</title>
+    <title>Личный кабинет</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -38,192 +40,368 @@
         </nav>
     </header>
 
-    <section class="profile_section">
-        <nav>
-            <div class="profile">
-                <img src="images/av4.png" alt="#">
+
+    <main>
+        <section class="navbar">
+            <div class="profile_name">
+                <img src="/images/av4.png" alt="#">
                 <h1>Хатидже Сафина</h1>
             </div>
 
-            <ul>
-                <li><a href="#">Мой профиль</a></li>
-                <li><a href="#" id="btnFriends">Друзья</a></li>
-                <li><a href="#">Статистика</a></li>
-                <li><a href="#" id="btnMessenger">Сообщения</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#">Мой профиль</a></li>
+                    <li><a href="#" id="btnFriends">Друзья</a></li>
+                    <li><a href="#">Статистика</a></li>
+                    <li><a href="#" id="btnMessenger">Сообщения</a></li>
+                </ul>
+            </nav>
 
-        <div class="profile_section_container">
-            <div class="profile_section_container_friends hidden" id="profile_section_container_friends">
-                <div class="profile_section_container_friends_left">
-                    <div class="profile_section_container_friends_left_title">
-                        <div class="profile_section_container_friends_left_title_up">
-                            <div>
-                                <button>Все друзья</button>
-                                <button>Друзья онлайн</button>
-                            </div>
-    
-                            <button>Найти друзей</button>
-                        </div>
+        </section>
 
-                        <input type="text" placeholder="Поиск друзей">                        
-                    </div>
-
-                    <ul>
-                        <li>
-                            <img src="images/av1.png" alt="#">
-
-                            <div class="friend_info">
-                                <a href="#" class="friendName">Анжела Фамилия</a>
-                                <p>Software Engeener</p>
-                                <a href="#" class="sendMessage">Написать сообщение</a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <img src="images/av1.png" alt="#">
-
-                            <div class="friend_info">
-                                <a href="#" class="friendName">Анжела Фамилия</a>
-                                <p>Software Engeener</p>
-                                <a href="#" class="sendMessage">Написать сообщение</a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <img src="images/av1.png" alt="#">
-
-                            <div class="friend_info">
-                                <a href="#" class="friendName">Анжела Фамилия</a>
-                                <p>Software Engeener</p>
-                                <a href="#" class="sendMessage">Написать сообщение</a>
-                            </div>
-                        </li>
-                    </ul>
+        <section class="messenger_section hidden" id="messengerContainer">
+            <div class="messenger_section_listChat">
+                <div class="messenger_section_listChat_title">
+                    <input type="text" placeholder="Поиск">
                 </div>
 
-                <div class="profile_section_container_friends_right">
-                    <div class="statistic_card">
-                        <div class="statistic_card_title">
-                            <h1>Возможные друзья</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">
+                                <img src="/images/chat1.jpg" alt="#">
+
+                                <div class="">
+                                    <h4>Home of the Moonlight</h4>
+                                    <p>
+                                        <span>Руслан:</span>
+                                        <span>Капитализм</span>
+                                    </p>
+                                </div>
+
+                            </a></li>
+
+                        <li><a href="#">
+                                <img src="/images/chat1.jpg" alt="#">
+
+                                <div class="">
+                                    <h4>Lothar Entertaiment</h4>
+                                    <p>
+                                        <span>Руслан:</span>
+                                        <span>Капитализм</span>
+                                    </p>
+                                </div>
+
+                            </a></li>
+
+                        <li><a href="#">
+                                <img src="/images/chat1.jpg" alt="#">
+
+                                <div class="">
+                                    <h4>Lothar Software</h4>
+                                    <p>
+                                        <span>Руслан:</span>
+                                        <span>Капитализм</span>
+                                    </p>
+                                </div>
+
+                            </a></li>
+
+                        <li><a href="#">
+                                <img src="/images/chat1.jpg" alt="#">
+
+                                <div class="">
+                                    <h4>Каганат</h4>
+                                    <p>
+                                        <span>Руслан:</span>
+                                        <span>Капитализм</span>
+                                    </p>
+                                </div>
+
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <hr>
+
+            <div class="messenger_section_chat">
+                <div class="messenger_section_title">
+                    <div class="messenger_section_title_left">
+                        <img src="/images/chat1.jpg" alt="#">
+
+                        <div class="messenger_section_title_left_info">
+                            <h3>Home of the Moonlight</h3>
+                            <p>6 участников</p>
                         </div>
-        
-                        <ul>
-                            <li>
-                                <a href="#"><img src="/images/av4.png" alt="#">Снежанна Сафина</a>
-                            </li>
-                            <li><a href="#"><img src="/images/av4.png" alt="#">Кристина Сафина</a></li>
-                            <li><a href="#"><img src="/images/av4.png" alt="#">Хатидже Сафина</a></li>
-                            <li><a href="#"><img src="/images/av4.png" alt="#">Аиша Сафина</a></li>
-                            <li><a href="#"><img src="/images/av4.png" alt="#">Искандер Сафина</a></li>
-                        </ul>
                     </div>
+
+                    <div class="messenger_section_title_right">
+                        <a href="#">Поиск</a>
+                        <a href="#">...</a>
+                    </div>
+                </div>
+
+                <div class="chat_container">
+                    <ul>
+                        <li>
+                            <p></p>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="messenger_section_chatButtons">
+                    <input type="text" placeholder="Введите сообщения...">
+                    <button>П</button>
+                    <button>А</button>
+                    <button>Отправить</button>
                 </div>
 
             </div>
 
-            <div class="profile_section_container_messenger" id="profile_section_container_messenger">
-                <div class="profile_section_container_messenger_left">
-                    <div class="profile_section_container_messenger_left_title">
-                        <input type="text" placeholder="Поиск">
+
+        </section>
+
+        <section class="friends_section hidden" id="friendsListContainer">
+            <div class="friends_section_title">
+                <div class="friends_section_title_filter">
+                    <div class="friends_section_title_filter_left">
+                        <button>Все друзья</button>
+                        <button>Друзья онлайн</button>
                     </div>
 
-                    <ul>
-                        <li><a href="#">
-                            <img src="images/chat1.jpg" alt="#">
-                            <div class="last_message">
-                                <h4>Home of the Moonlight</h4>
-
-                                <p>
-                                    <span>Руслан:</span>
-                                    <span>Я пидарас</span>
-                                </p>
-                            </div>
-                        </a></li>
-
-                        <li><a href="#">
-                            <img src="images/chat1.jpg" alt="#">
-                            <div class="last_message">
-                                <h4>Home of the Moonlight</h4>
-
-                                <p>
-                                    <span>Руслан:</span>
-                                    <span>Я пидарас</span>
-                                </p>
-                            </div>
-                        </a></li>
-
-                        <li><a href="#">
-                            <img src="images/chat1.jpg" alt="#">
-                            <div class="last_message">
-                                <h4>Home of the Moonlight</h4>
-
-                                <p>
-                                    <span>Руслан:</span>
-                                    <span>Я пидарас</span>
-                                </p>
-                            </div>
-                        </a></li>
-                    </ul>
+                    <button>Найти друзей</button>
                 </div>
 
-                <hr>
+                <div class="friends_section_title_filter_right">
+                    <input type="text" placeholder="Поиск...">
+                    <button>Найти</button>
+                </div>
+            </div>
 
-                <div class="profile_section_container_messenger_right">
-                    <div class="profile_section_container_messenger_right_title">
-                        <div class="profile_section_container_messenger_right_title_left">
-                            <img src="/images/chat1.jpg" alt="#">
-                            
-                            <div class="profile_section_container_messenger_right_title_left_info">
-                                <h4>Home of the Moonlight</h4>
-                                <p>12 участников</p>
+            <div class="friends_section_list">
+                <ul>
+                    <li>
+                        <div class="friends_section_list_li_left">
+                            <img src="/images/av1.png" alt="#">
+    
+                            <div class="friends_section_list_li_info">
+                                <a href="#" class="name">Фатимаф Аджиева</a>   
+                                <a href="#">Написать сообщения</a>
                             </div>
                         </div>
 
-                        <div class="profile_section_container_messenger_right_title_right">
-                            <a href="#"><img src="images/search.png" alt="#"></a>
+                        <div class="friends_section_list_li_right">
                             <a href="#">...</a>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="messenger_box">
-                        <ul>
-                            <li class="get_message">
-                                <h4>Мамчуев Али</h4>
-                                <p>Привет. Как самочувствие ?</p>
-                                <div class="info_messenge">
-                                    <p>13:37</p>
-                                </div>
-                            </li>
-
-                            <li class="post_message">
-                                <p>Температура упала. Уже чувствую себя хорошо</p>
-                                <div class="info_messenge">
-                                    <p>13:37</p>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <div class="send_box">
-                        <input type="text" placeholder="Ввведите сообщение...">
-                        
-                        <div class="send_box_buttons">
-                            <button>Прикрепить</button>
-                            <button class="btnSendMessage">Отправить</button>
+                    <li>
+                        <div class="friends_section_list_li_left">
+                            <img src="/images/av1.png" alt="#">
+    
+                            <div class="friends_section_list_li_info">
+                                <a href="#" class="name">Фатимаф Аджиева</a>   
+                                <a href="#">Написать сообщения</a>
+                            </div>
                         </div>
+
+                        <div class="friends_section_list_li_right">
+                            <a href="#">...</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="friends_section_list_li_left">
+                            <img src="/images/av1.png" alt="#">
+    
+                            <div class="friends_section_list_li_info">
+                                <a href="#" class="name">Фатимаф Аджиева</a>   
+                                <a href="#">Написать сообщения</a>
+                            </div>
+                        </div>
+
+                        <div class="friends_section_list_li_right">
+                            <a href="#">...</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="myProfile_section">
+            <div class="myProfile_section_title">
+                <div class="myProfile_section_title_left">
+                    <div class="myProfile_section_title_info">
+                        <p>Регистрация: </p>
+                        <p>Сентябрь 2020</p>
+                    </div>
+    
+                    <div class="myProfile_section_title_info">
+                        <p>0 подписок /</p>
+                        <p>2 подписчика</p>
+                    </div>
+    
+                    <div>
+                        <p>Россия</p>
+                    </div>
+                </div>
+
+                <div class="myProfile_section_title_right">
+                    <div class="currency">
+                        <img src="https://d35aaqx5ub95lt.cloudfront.net/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg">
+                        <p>0</p>
                     </div>
 
+                    <div class="currency">
+                        <img src="https://d35aaqx5ub95lt.cloudfront.net/images/hearts/8fdba477c56a8eeb23f0f7e67fdec6d9.svg">
+                        <p>25</p>
+                    </div>
+
+                    <div class="currency">
+                        <img src="https://d35aaqx5ub95lt.cloudfront.net/images/gems/45c14e05be9c1af1d7d0b54c6eed7eee.svg">
+                        <p>1079</p>
+                    </div>
                 </div>
 
             </div>
 
-        </div>
+            <div class="myProfile_section_statistics">
+                <div class="myProfile_section_statistics_title">
+                    <h1>Статистика</h1>
+                </div>
 
-    </section>
+                <div class="myProfile_section_statistics_list">
+                    <ul>
 
-    <script src="/js/script.js"></script>
+                        <div class="myProfile_section_statistics_list_row">
+                            <li>
+                                <div class="statistic_card">
+                                    <img src="https://d35aaqx5ub95lt.cloudfront.net/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg">
     
+                                    <div class="statistic_card_info">
+                                        <p>0</p>
+                                        <p>Ударный режим</p>
+                                    </div>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="statistic_card">
+                                    <img src="https://d35aaqx5ub95lt.cloudfront.net/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg">
+    
+                                    <div class="statistic_card_info">
+                                        <p>0</p>
+                                        <p>Ударный режим</p>
+                                    </div>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="statistic_card">
+                                    <img src="https://d35aaqx5ub95lt.cloudfront.net/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg">
+    
+                                    <div class="statistic_card_info">
+                                        <p>0</p>
+                                        <p>Ударный режим</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+
+                        <div class="myProfile_section_statistics_list_row">
+                            <li>
+                                <div class="statistic_card">
+                                    <img src="https://d35aaqx5ub95lt.cloudfront.net/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg">
+    
+                                    <div class="statistic_card_info">
+                                        <p>0</p>
+                                        <p>Ударный режим</p>
+                                    </div>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="statistic_card">
+                                    <img src="https://d35aaqx5ub95lt.cloudfront.net/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg">
+    
+                                    <div class="statistic_card_info">
+                                        <p>0</p>
+                                        <p>Ударный режим</p>
+                                    </div>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="statistic_card">
+                                    <img src="https://d35aaqx5ub95lt.cloudfront.net/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg">
+    
+                                    <div class="statistic_card_info">
+                                        <p>0</p>
+                                        <p>Ударный режим</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="myProfile_section_achievements">
+                <div class="myProfile_section_achievements_title">
+                    <h1>Достижения</h1>
+                    <a href="#">Показать все</a>
+                </div>
+
+                <div class="myProfile_section_achievements_list">
+                    <ul>
+                        <li>
+                            <div class="myProfile_section_achievements_list_card">
+                                <img src="/images/achievements_icon.png" alt="#">
+
+                                <div class="myProfile_section_achievements_list_card_info">
+                                    <h3>Энтузиаст</h3>
+                                    <progress value="50" max="100"></progress>
+                                    <p>Удерживайте ударный режим</p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="myProfile_section_achievements_list_card">
+                                <img src="/images/achievements_icon.png" alt="#">
+
+                                <div class="myProfile_section_achievements_list_card_info">
+                                    <h3>Энтузиаст</h3>
+                                    <progress value="50" max="100"></progress>
+                                    <p>Удерживайте ударный режим</p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="myProfile_section_achievements_list_card">
+                                <img src="/images/achievements_icon.png" alt="#">
+
+                                <div class="myProfile_section_achievements_list_card_info">
+                                    <h3>Энтузиаст</h3>
+                                    <progress value="50" max="100"></progress>
+                                    <p>Удерживайте ударный режим</p>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
 </body>
+
 </html>

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dde0e5;
+}
+
+header nav {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    padding: 0 100px;
+    background-color: #06879AFF;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav h1 {
+    color: white;
+}
+
+header nav ul li a {
+    color: white;
+    padding: 5px;
+}
+
+header nav ul li a:hover {
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile_container_img img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile_container_active {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.profile_container_active select {
+    border: none;
+    padding: 3px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #06879AFF;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    outline: none;
+}
+
+.statistic_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.statistic_card ul {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 10px;
+    gap: 10px;
+    width: 290px;
+    margin-top: 10px;
+}
+
+.statistic_card ul li a {
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
+    color: black;
+}
+
+.statistic_card ul li a img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.statistic_card ul li a:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}

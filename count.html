@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count</title>
+</head>
+<body>
+    <h1>Счетчик</h1>
+    <h1 id = "count">0</h1>
+
+    <button id="bntClik">Click me</button>
+
+    <script>
+        let count = document.getElementById('count')
+        const bntClik = document.getElementById('bntClik')
+
+        bntClik.addEventListener('click', function() {
+            console.log(count, typeof(parseInt(count.textContent)))
+            count.textContent = parseInt(count.textContent) + 1
+        })
+
+    </script>
+</body>
+</html>

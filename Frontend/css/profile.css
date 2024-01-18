@@ -1,291 +1,329 @@
-.profile_section {
+main {
     margin-top: 30px;
     display: flex;
-    gap: 10px;
     justify-content: center;
 }
 
-.profile_section nav {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    background-color: #06879AFF;;
-    border-radius: 10px;
+.hidden {
+    display: none !important;
 }
 
-.profile_section nav ul {
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #06879AFF;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.navbar ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.profile_section nav ul li a {
+.navbar ul li a {
     color: white;
 }
 
-.profile_section nav ul li a:hover {
-    font-weight: 600;
-    text-decoration: underline;
-}
-
-.profile_section nav ul li a:active {
-    text-decoration: none;
-}
-
-.profile {
+.profile_name {
     display: flex;
     gap: 10px;
     flex-direction: column;
     align-items: center;
 }
 
-.profile h1 {
+.profile_name h1 {
+    font-size: 20px;
     color: white;
 }
 
-.profile img {
+.profile_name img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.messenger_section {
+    gap: 20px;
+    display: flex;
+    padding: 20px;
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.messenger_section_title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.messenger_section_title img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.messenger_section_title_left {
+    display: flex;
+    gap: 10px;
+}
+
+.messenger_section_listChat {
+    display: flex;
+    min-width: 300px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.messenger_section_listChat nav ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.messenger_section_listChat nav ul li a {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+.messenger_section_listChat nav ul li a img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.messenger_section_listChat nav ul li a:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.messenger_section_listChat_title {
+    display: flex;
+    justify-content: center;
+}
+
+.messenger_section_listChat_title input {
+    width: 220px;
+}
+
+.messenger_section_chat {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.chat_container {
+    display: flex;
+    height: 100%;
+    background-image: url("/images/background_messenger.png");
+    border-radius: 10px;
+}
+
+.messenger_section_chatButtons {
+    display: flex;
+    gap: 10px   ;
+    width: 100%;
+}
+
+.messenger_section_chatButtons input {
+    width: 100%;
+}
+
+.friends_section {
+    display: flex;
+    width: 550px;
+    padding: 20px;
+    flex-direction: column;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.friends_section_title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.friends_section_title_filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.friends_section_title_filter_right {
+    display: flex;
+    gap: 5px;
+}
+
+.friends_section_title_filter_right input {
+    width: 100%;
+}
+
+.friends_section_list ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.friends_section_list ul li img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
 }
 
-.profile_section_container_friends {
-    display: flex;
-    gap: 20px;
-}
-
-.profile_section_container_friends_left {
-    display: flex;
-    gap: 10px;
-    width: 550px;
-    padding: 20px;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.profile_section_container_friends_left_title {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.profile_section_container_friends_left_title_up {
+.friends_section_list ul li {
     display: flex;
     justify-content: space-between;
-}
-
-.profile_section_container_friends_left ul {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.profile_section_container_friends_left ul li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    width: 100%;
     padding-bottom: 20px;
-    border-bottom: 1px solid #a5acb3;
+    border-bottom: 1px solid #06879AFF;
 }
 
-.profile_section_container_friends_left ul li img {
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-}
-
-.friend_info {
+.friends_section_list_li_left {
     display: flex;
-    gap: 5px;
+    gap: 10px;
+    align-content: center;
+}
+
+.friends_section_list_li_info {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
     flex-direction: column;
 }
 
-.friend_info p {
-    font-family: 'Montserrat', sans-serif;
+.friends_section_list_li_info a {
+    color: #06879AFF;
 }
 
-.friendName {
-    color: #06879AFF;
+.name {
     font-weight: 600;
 }
 
-.sendMessage {
-    color: #06879AFF;
-    font-size: 14px;
-}
-
-.profile_section_container_friends_right {
+.myProfile_section {
     display: flex;
     flex-direction: column;
-}
-
-.profile_section_container_messenger {
-    display: flex;
-    padding: 20px 10px;
-    min-height: 1000px;
-    width: 1000px;
+    gap: 20px;
     background-color: white;
-    border-radius: 10px;
+    padding: 20px;   
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.profile_section_container_messenger hr {
-    margin: 0 10px;
-}
-
-.profile_section_container_messenger_left {
+.myProfile_section_title {
     display: flex;
-    max-width: 300px;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.myProfile_section_title_right {
+    display: flex;
     gap: 20px;
 }
 
-.profile_section_container_messenger_left ul {
+.currency {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.myProfile_section_title_info {
+    display: flex;
+    gap: 5px;
+}
+
+.myProfile_section_statistics_list {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.myProfile_section_statistics_list ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 20px;
 }
 
-.profile_section_container_messenger_left ul li a {
-    display: flex;
-    gap: 10px;
+.myProfile_section_statistics_list ul li .statistic_card {
+    border: 2px solid lightgray;
     padding: 10px;
-    align-items: center;
-}
-
-.profile_section_container_messenger_left ul li a:hover {
-    background-color: #a5acb3;
     border-radius: 10px;
 }
 
-.profile_section_container_messenger_left ul li a img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-
-.last_message {
+.myProfile_section_statistics_list_row {
     display: flex;
-    flex-direction: column;
-}
-
-.last_message p span:first-child{
-    font-size: 14px;
-    color: #06879AFF;
-}
-
-.last_message p span:last-child {
-    font-size: 14px;
-}
-
-.profile_section_container_messenger_right {
-    display: flex;
-    width: 700px;
-    flex-direction: column;
     gap: 10px;
 }
 
-.profile_section_container_messenger_right_title {
+.statistic_card {
     display: flex;
+    flex-direction: row;
+    gap: 10px; 
+    align-items: center; 
+}
+
+
+.statistic_card img {
+    height: 50px;
+    width: 50px;
+}
+
+.statistic_card_info {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.statistic_card_info p {
+    font-weight: 500;
+}
+
+.myProfile_section_statistics_list_buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.myProfile_section_achievements {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.myProfile_section_achievements_title {
+    display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 
-.profile_section_container_messenger_right_title_left {
+.myProfile_section_achievements_list ul {
     display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.profile_section_container_messenger_right_title_left img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-
-.profile_section_container_messenger_right_title_left_info {
-    display: flex;
-    gap: 3px;
     flex-direction: column;
+    gap: 10px;
 }
 
-
-.profile_section_container_messenger_right_title_right {
+.myProfile_section_achievements_list_card {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.profile_section_container_messenger_right_title_right a img {
-    height: 30px;
-    width: 30px;
-}
-
-.messenger_box {
-    border-radius: 10px;
-    padding: 20px;
-    background-image: url('/images/background_messenger.png');
-    height: 100%
-}
-
-.messenger_box ul {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.messenger_box ul li {
-    display: flex;
-    flex-direction: column;
     padding: 10px;
-    max-width: 430px;
+    border: 2px solid lightgray;
     border-radius: 10px;
 }
 
-.get_message {
-    background-color: white;
-}
-
-.messenger_box ul li h4 {
-    margin-bottom: 3px;
-}
-
-.info_messenge {
+.myProfile_section_achievements_list_card_info {
     display: flex;
+    gap: 5px;
     flex-direction: column;
-}
-
-.info_messenge p {
-    font-size: 12px;
-}
-
-.post_message {
-    align-self: flex-end;
-    background-color: #EFFDDE;
-}
-
-.info_messenge {
-    align-items: flex-end;
-}
-
-.send_box {
-    display: flex;
-    width: 100%;
-    /* justify-content: space-between; */
-    gap: 5px;
-}
-
-.send_box_buttons {
-    display: flex;
-    gap: 5px;
-}
-
-.send_box input {
-    width: 100%;
-}
-
-.btnSendMessage {
-    background-color: #06879AFF;
-    color: white; 
 }

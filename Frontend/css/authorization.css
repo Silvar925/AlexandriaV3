@@ -1,0 +1,93 @@
+.authorization_section {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.authorization_section_container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.authorization_section_container_title h1 {
+    background-color: #06879AFF;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.authorization_section_container_title {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+form input {
+    width: 270px;
+    border-radius: 5px;
+    font: 63 12pt "Montserrat SemiBold";
+    padding-left: 10px;
+
+    margin-top: 5px;
+    border: 2px solid #ccc; /* Добавляем границу для визуального отделения */
+    transition: border-color 0.3s ease; /* Добавляем плавный переход при изменении цвета */
+}
+
+form input:focus {
+    outline: none;
+    border-color: #085965; 
+}
+
+.hidden {
+    display: none !important;
+}
+
+.bntSigIn {
+    width: 100%;
+    background-color: #085965;
+    color: white;
+    border-radius: 5px;
+    border: none; /* Убираем границу */
+}
+
+.bntSigIn:hover {
+    background-color: #06454f;
+}
+
+.bntSigIn:active {
+    background-color: #085965;
+    font: 63 9pt "Montserrat SemiBold";
+
+}
+
+.btnCreate {
+    width: 270px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #085965;
+}
+
+.btnCreate:hover {
+    background-color: lightgray;
+}
+
+.btnCreate:active {
+    background-color: white;
+    font: 63 9pt "Montserrat SemiBold";
+}
